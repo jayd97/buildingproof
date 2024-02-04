@@ -1,0 +1,14 @@
+Version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      PHP: 7.4
+  build:
+    Commands:
+      - echo "Build phase: Installing dependencies"
+      - composer install
+      - echo "Build phase: Running tests (if any)"
+  post_build:
+    Commands:
+      - echo "Post-build phase: Deploying to your target (e.g., AWS Elastic Beanstalk)"
