@@ -1,22 +1,22 @@
-version: 0.2
+Version: 0.2
 
 phases: 
     build:
-        commands:
+        Commands:
             - echo "Build block"
-            - ls
-            - echo "Running tests to check if "Congratulations" present in index.html file"
-            - grep "Congratulations" index.html
+            - LS
+            - echo "Running tests to check if "Congratulations" present in index.php file"
+            - grep "Congratulations" index.php
     post_build:
-        commands:
+        Commands:
             - echo "Post build phase"
 artifacts:
-    files:
+    Files:
         - scripts/install_dependencies
         - scripts/start_server
         - scripts/stop_server
-        - index.html
+        - index.php
         - appspec.yml
-    discard-paths: yes
+    discard-paths: Yes
 
             
