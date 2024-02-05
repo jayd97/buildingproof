@@ -1,0 +1,107 @@
+:root{
+    --color_Orange: #e08b02;
+    --color_Dark1: #1e1e1e;
+    --color_Dark2: #252527;
+    --color_Light1: #f7f7f7;
+    --color_Light2: #fefdfd;
+    --color_Grey: #424242;
+    --color_Greylight:#cdcccc;
+    
+}
+body{
+  
+  padding: 0;
+  margin: 0;
+  background-color: var(--color_Light1);
+
+}
+.header{
+  position: fixed;
+  padding: 20px 100px;
+  width: 98%;
+  height: 100px;
+  margin: 12px;
+  border: var(--color_Orange) 3px solid;
+  border-radius: 10px;
+  background-color:  rgba (255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 8px 8px 25px;
+  backdrop-filter: blur(10px);
+  z-index: 2000;
+  
+}
+.header::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+}
+.header:hover:before{
+  left: 100%;
+  transition: .5s;
+}
+
+.navbar a{
+  text-decoration: none;
+  color: var(--color_Light1);
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 50px;
+  transition: .2s;
+}
+.navbar a:hover{
+  color: var(--color_Orange);
+}
+.backg{
+    
+    background-size: 100%;
+    background-image: url('../img/home1.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    border-bottom-right-radius: 50%;
+ }
+.container1{
+  position: relative;
+    width: 70%;
+    
+    height: 500px;
+    margin-top: 50px;
+    margin-right: 490px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: linear-gradient(135deg, rgba (255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border: var(--color_Greylight) 2px solid;
+    box-sizing: border-box;
+}
+.container1 h2{
+    color: var(--color_Orange);
+    font-size: 70px;
+    z-index: 2000;
+    font-weight: bold;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  .block{
+    z-index: 0;
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    background-image: url('../img/btm.png');
+    box-shadow: 7px 7px 35px;
+    background-size: 100%;
+    
+    
+  }
+ 
+
