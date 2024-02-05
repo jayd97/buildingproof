@@ -1,18 +1,18 @@
-version: 0.0
-os: linux
-files:
-  - source: /index.html
+Version: 0.0
+os: Linux
+Files:
+  - Source: /index.php
     destination: /var/www/html/
 hooks:
   BeforeInstall:
-    - location: install_dependencies
+    - Location: install_dependencies
       timeout: 300
-      runas: root
-    - location: start_server
+      runas: Root
+    - Location: start_server
       timeout: 300
-      runas: root
+      runas: Root
   ApplicationStop:
-    - location: stop_server
+    - Location: stop_server
       timeout: 300
-      runas: root
+      runas: Root
 
